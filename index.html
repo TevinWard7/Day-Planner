@@ -24,55 +24,55 @@
     <table>
 
       <tr class="row">
-        <th value=9>9 AM</th>
+        <th class="hour">9 AM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
       <tr class="row">
-        <th value=10>10 AM</th>
+        <th class="hour">10 AM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
       <tr class="row">
-        <th value=11>11 AM</th>
+        <th class="hour">11 AM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
       <tr class="row">
-        <th value=12>12 PM</th>
+        <th class="hour">12 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
       <tr class="row">
-        <th value=1>1 PM</th>
+        <th class="hour">1 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
       <tr class="row">
-        <th value=2>2 PM</th>
+        <th class="hour">2 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
       <tr class="row">
-        <th value=3>3 PM</th>
+        <th class="hour">3 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
       <tr class="row">
-        <th>4 PM</th>
+        <th class="hour">4 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
       <tr class="row">
-        <th>5 PM</th>
+        <th class="hour">5 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
@@ -89,9 +89,11 @@
     // Adding Current Date To #currentDay <p> Tag
     $("#currentDay").text(moment.format("dddd " + "MMMM " + "Mo " + "YYYY "));
 
+    // Grapping The Curent Hour From MomentAPI 
+    var currentHour = moment.format("H");
 
-    if (valu)
-      $("td").addClass("present");
+    $("td").addClass("present");
+
 
 
   </script>
