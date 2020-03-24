@@ -23,55 +23,55 @@
     <!-- Timeblocks go here -->
     <table>
 
-      <tr>
-        <th>9 AM</th>
+      <tr class="row">
+        <th value=9>9 AM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
-      <tr>
-        <th>10 AM</th>
+      <tr class="row">
+        <th value=10>10 AM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
-      <tr>
-        <th>11 AM</th>
+      <tr class="row">
+        <th value=11>11 AM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
-      <tr>
-        <th>12 PM</th>
+      <tr class="row">
+        <th value=12>12 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
-      <tr>
-        <th>1 PM</th>
+      <tr class="row">
+        <th value=1>1 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
-      <tr>
-        <th>2 PM</th>
+      <tr class="row">
+        <th value=2>2 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
-      <tr>
-        <th>3 PM</th>
+      <tr class="row">
+        <th value=3>3 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
-      <tr>
+      <tr class="row">
         <th>4 PM</th>
         <td>data</td>
         <td>data</td>
       </tr>
 
-      <tr>
+      <tr class="row">
         <th>5 PM</th>
         <td>data</td>
         <td>data</td>
@@ -88,6 +88,10 @@
 
     // Adding Current Date To #currentDay <p> Tag
     $("#currentDay").text(moment.format("dddd " + "MMMM " + "Mo " + "YYYY "));
+
+
+    if (valu)
+      $("td").addClass("present");
 
 
   </script>
