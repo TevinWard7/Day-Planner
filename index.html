@@ -26,11 +26,11 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script type="text/javascript">
+
     var moment = moment();
 
-    console.log(JSON.stringify(moment));
 
-    $("#currentDay").text(moment);
+    $("#currentDay").text(moment.format("dddd " + "MMMM " + "YYYY "));
 
 
   </script>
